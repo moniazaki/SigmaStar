@@ -103,11 +103,15 @@ main #section1 .home{
     justify-content: space-between;
     align-items: center;
     padding:10px 0px;
+    width:100%;
+}main #section1 .row .animation{
+    animation: logo 7s infinite;
+    width:100%;
 }
 
-main #section1 .row .animation{
-    width:45%;
-    animation: logo 7s infinite;
+main #section1 .row .animation img{
+    margin-top:25px;
+    width:50%;
 }
 @keyframes logo {
     0% {
@@ -612,29 +616,39 @@ footer .container .row  span{
     }
 }
 @media (max-width:576px){
+    main #section1 .row .animation{
+        /* width:150px; */
+    }
     nav .container{
         width:100%;
         padding:0px 15px;
+        margin:auto;
     }
     main #section1 .container{
         width:100%;
         padding:0px 15px;
+        margin:auto;
+        
     }
     main #section-2 .container{
         width:100%;
         padding:0px 15px;
+        margin:auto;
     }
     main #section-3 .container{
         width:100%;
         padding:0px 15px;
+        margin:auto;
     }
     main #section-4 .container{
         width:100%;
         padding:0px 15px;
+        margin:auto;
     }
     main #section-5 .container{
         width:100%;
         padding:0px 15px;
+        margin:auto;
     }
     main #section-4 .services{
         width:100%

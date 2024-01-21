@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 :root {
     --icon-color: #3eb0da;
@@ -17,6 +17,7 @@ header{
     position:fixed;
     width:100%;
     background-color: white;
+    z-index: 999;
 }
 nav .container{
     width:90%;
@@ -40,6 +41,7 @@ nav .row .logo .first {
 nav .row .logo .second {
     color: #2596be;
 }
+
 nav .row .bars{
     display: none;
     padding:15px;
@@ -103,6 +105,8 @@ main #section1 .home{
     justify-content: space-between;
     align-items: center;
     padding:10px 0px;
+    /* padding:10px 0px; */
+
     width:100%;
 }main #section1 .row .animation{
     animation: logo 7s infinite;
@@ -587,10 +591,26 @@ footer .container .row  span{
 }
 @media (max-width:780px) {
     nav .row .nav-link{
-        display: none;
+        height:0;
+        width:100%;
+        overflow: hidden;
+        text-align: center;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+    }
+    nav .row .nav-link ul{
+        display: block;
+        justify-content: center;
     }
     nav .row .bars{
         display: block;
+        padding:0px;
+    }
+    nav .row .logo{
+        width:100%
     }
     main #section-2 .container .row{
         margin-top: 25px;
@@ -673,6 +693,12 @@ footer .container .row  span{
     }
     main #section-4 .services  .icon3  .third div{
         width:100%
+    }
+    main #section-5 .container .contact .section5  .form  .input {
+        flex-wrap: wrap;
+    }
+    main #section-5 .container .contact .section5  .form  .input #email {
+        margin: 10px 0px;
     }
 
 }
